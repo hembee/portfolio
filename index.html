@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark_Tony</title>
+    <link href="./styles.css" rel="stylesheet" type="text/css"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Space+Mono&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" rel="stylesheet"></link>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</head>
+<style>
+  *{
+  font-family: Verdana;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar{
+  background-image:linear-gradient(to right, #097, rgb(4, 58, 22)) ;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px;
+  justify-content: space-between;
+  height: auto;
+}
+.navbar-brand{
+  margin-left: 10px;
+}
+.navbar-nav li a{
+  margin-left: 20px;
+  float: right;
+  transition: 0.5s ease-in-out;
+  font-size: 28px;
+}
+.navbar-nav li a:hover{
+  transform: translateX(-10px);
+  color:cyan
+}
+
+#welcome-section{
+  width: 100%;
+  height: 700px;
+  background-color: rgb(95, 118, 160);
+  align-items: center;
+  display: flex;
+}
+
+.container h1{
+  font-size: 90px;
+}
+
+.container p{
+  font-size: 30px;
+   color: #900;
+}
+#projects{
+ background-color: #355;
+ align-items: center;
+ justify-content: center;
+ padding: 50px;
+ text-align: center;
+}
+.project-tile{
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  transition: 0.5s ease-in-out;
+}
+.project-tile:hover{
+  color: rgb(26, 23, 23);
+}
+#contact{
+ padding: 60px;
+  text-align: center;
+  align-items: center;
+  justify-content:center;
+  background-image: linear-gradient(to right, gray, darkcyan);
+ 
+}
+footer{
+   position: absolute;
+  width: 100%;
+}
+#contact h2{
+  color: #125;
+  font-size: 80px;
+}
+#contact p{
+  font-size: 30px;
+  color: #125;
+  margin-top: 1px;
+}
+#contact a{
+  text-decoration: none;
+  color: rgb(181, 180, 206);
+  font-size: 20px;
+  transition: 0.5s ease-in-out; 
+  margin-left: 10px;
+}
+#contact a:hover{
+  cursor: pointer;
+  color:#125;
+}
+@media (max-width: 700px){
+  #welcome-section{
+    height: 550px;
+  }
+  .container h1{
+  font-size: 40px;
+}
+  .container p{
+  font-size: 20px;
+}
+  #contact h2{
+  font-size: 50px;
+}
+#contact p{
+  font-size: 30px;
+}
+#contact a{
+  font-size: 20px;
+}
+  #contact{
+    padding: 20px;
+  }
+}
+</style>
+<body>
+  <nav class="navbar">
+      <a class="text-white-50 navbar-brand">Dark_Tony</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#welcome-section">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">PROJECTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+     
+  <section id="welcome-section">
+    <div class="container">
+      <h1 class="text-black-50 text-center">My name is Dark-Tony</h1>
+      <p class="text-center">a web developer</p>
+    </div>
+ </section>
+  <section class="container-fluid" id="projects">
+    <div class="row">
+        <div class="col-sm-12 col-md-6 projects-grid">
+          <a class="project-tile" href="https://codepen.io/Hembee999/pen/WNMOYVP" target="_blank">
+          <img class="img-fluid" src="https://codepen.io/Hembee999/pen/WNMOYVP/image/small.png" alt="biography page">
+          <p class="project-title">Biography Page</p>
+          </a>
+        </div>
+        <div class="col-sm-12 col-md-6 projects-grid">
+          <a class="project-tile" href="https://codepen.io/Hembee999/pen/poaWPRb" target="_blank">
+          <img class="img-fluid" src="https://codepen.io/Hembee999/pen/poaWPRb/image/small.png" alt="biography page">
+          <p class="project-title">Technical Documentation Page</p>
+          </a>
+        </div>
+        <div class="col-sm-12 col-md-6 projects-grid">
+          <a class="project-tile" href="https://codepen.io/Hembee999/pen/podOoXg" target="_blank">
+          <img class="img-fluid" src="https://codepen.io/Hembee999/pen/podOoXg/image/small.png" alt="biography page">
+          <p class="project-title">Survey Page</p>
+          </a>
+        </div>
+        <div class="col-sm-12 col-md-6 projects-grid">
+          <a class="project-tile" href="https://codepen.io/Hembee999/pen/QWOjbeo" target="_blank">
+          <img class="img-fluid" src="https://codepen.io/Hembee999/pen/QWOjbeo/image/small.png" alt="biography page">
+          <p class="project-title">Tribute Page</p>
+          </a>
+        </div>
+        <a href="https://codepen.io/Hembee999" target="_blank"><button type="button" class="btn btn-lg btn-success btn-outline-dark">VIEW MORE-></button></a>
+    </div>
+    </ul>
+  </section>
+  <footer>
+  <section id="contact">
+    <div class="container">
+    <h2>Contact me</h2>
+    <p>Let's Pap</p>
+    <a target="_blank" href="tel:08117397781"><i class="fa fa-phone"></i>Call Me</a>
+    <a target="_blank"href="mailto:hembee999@gmail.com"><i class="fa fa-at"></i>Gmail</a>
+    <a target="_blank"id="profile-link" href="https://github.com/hembee"><i class="fa fa-square"></i>Github</a>
+    </div>
+  </section>
+</footer>
+
+</html>
