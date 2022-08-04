@@ -1,0 +1,116 @@
+*{
+    font-family: Verdana;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .navbar{
+    background-image:linear-gradient(to right, #097, rgb(4, 58, 22)) ;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    justify-content: space-between;
+    height: auto;
+  }
+  .navbar-brand{
+    margin-left: 10px;
+  }
+  .navbar-nav li a{
+    margin-left: 20px;
+    float: right;
+    transition: 0.5s ease-in-out;
+    font-size: 28px;
+  }
+  .navbar-nav li a:hover{
+    transform: translateX(-10px);
+    color:cyan
+  }
+  
+  #welcome-section{
+    width: 100%;
+    height: 700px;
+    background-color: rgb(95, 118, 160);
+    align-items: center;
+    display: flex;
+  }
+  
+  .container h1{
+    font-size: 90px;
+  }
+  
+  .container p{
+    font-size: 30px;
+     color: #900;
+  }
+  #projects{
+   background-color: #355;
+   align-items: center;
+   justify-content: center;
+   padding: 50px;
+   text-align: center;
+  }
+  .project-tile{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    transition: 0.5s ease-in-out;
+  }
+  .project-tile:hover{
+    color: rgb(26, 23, 23);
+  }
+  #contact{
+   padding: 60px;
+    text-align: center;
+    align-items: center;
+    justify-content:center;
+    background-image: linear-gradient(to right, gray, darkcyan);
+   
+  }
+  footer{
+     position: absolute;
+    width: 100%;
+  }
+  #contact h2{
+    color: #125;
+    font-size: 80px;
+  }
+  #contact p{
+    font-size: 30px;
+    color: #125;
+    margin-top: 1px;
+  }
+  #contact a{
+    text-decoration: none;
+    color: rgb(181, 180, 206);
+    font-size: 20px;
+    transition: 0.5s ease-in-out; 
+    margin-left: 10px;
+  }
+  #contact a:hover{
+    cursor: pointer;
+    color:#125;
+  }
+  @media (max-width: 700px){
+    #welcome-section{
+      height: 550px;
+    }
+    .container h1{
+    font-size: 40px;
+  }
+    .container p{
+    font-size: 20px;
+  }
+    #contact h2{
+    font-size: 50px;
+  }
+  #contact p{
+    font-size: 30px;
+  }
+  #contact a{
+    font-size: 20px;
+  }
+    #contact{
+      padding: 20px;
+    }
+  }
