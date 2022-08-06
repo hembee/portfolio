@@ -17,6 +17,7 @@
     margin-left: 10px;
   }
   .navbar-nav li a{
+    color: rgb(196, 176, 176);
     margin-left: 20px;
     float: right;
     transition: 0.5s ease-in-out;
